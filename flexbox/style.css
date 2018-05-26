@@ -1,0 +1,22 @@
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  line-height: 1;
+  color: #fff;
+  background: #007bbb;
+}
+
+li:first-child {
+  background: #f8b500;
+}
+
+li p {
+  margin: 0;
+  padding: 0;
+}
