@@ -1,13 +1,15 @@
 nav {
-  max-width: 1280px;
+  max-width: 840px;
   margin: auto;
   padding: 0;
+  border: 1px solid #000;
 }
 
 ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
 }
 
@@ -21,8 +23,7 @@ li {
 }
 
 li:first-child {
-  margin-right: auto;
-  background: #f8b500;
+  background-color: #f8b500;
 }
 
 li a {
