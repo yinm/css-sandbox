@@ -1,34 +1,23 @@
 .contents {
-  max-width: 800px;
-  margin: auto;
-  padding: 0;
-}
-
-.grid {
-  margin: 0;
-  padding: 0;
   display: flex;
-}
-
-.grid-cell {
-  margin: 5px;
-  padding: 0;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  background: #f3f3f2;
   border-radius: 5px;
-  line-height: 1;
-  color: #fff;
-  background: #007bbb;
+  justify-content: center;
+  align-items: center;
 }
 
-.flexible {
-  flex: 1;
+.align {
+  width: 400px;
+  height: 150px;
+  padding: 15px;
+  background: #c0c6c9;
+  border-radius: 5px;
+  flex: none;
 }
 
-.fixed {
-  width: 200px;
-}
-
-.grid-cell p {
-  display: block;
+p {
   margin: 0;
-  padding: 20px;
 }
