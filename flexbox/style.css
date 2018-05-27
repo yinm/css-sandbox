@@ -1,23 +1,44 @@
-.contents {
+body {
   display: flex;
-  width: 800px;
-  height: 400px;
-  margin: 20px auto;
-  background: #f3f3f2;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-}
-
-.align {
-  width: 400px;
-  height: 150px;
-  padding: 15px;
-  background: #c0c6c9;
-  border-radius: 5px;
-  flex: none;
-}
-
-p {
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+header,
+footer {
+  width: 100%;
+  padding: 2% 0;
+  font-size: 1.2rem;
+  color: #fff;
+  flex: 0;
+}
+
+header {
+  background: #006e54;
+}
+
+footer {
+  background: #727171;
+}
+
+.holyGrail {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+}
+
+.side-nav,
+.side-bar {
+  width: 200px;
+  background: #fddea5;
+}
+
+.side-nav {
+  order: -1;
 }
