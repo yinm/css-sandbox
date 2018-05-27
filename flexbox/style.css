@@ -17,16 +17,18 @@
   line-height: 1;
   color: #fff;
   background: #007bbb;
+}
+
+.flexible {
   flex: 1;
 }
 
-.twice {
-  flex: 2;
+.fixed {
+  width: 200px;
 }
 
 .grid-cell p {
   display: block;
   margin: 0;
   padding: 20px;
-  color: #fff;
 }
