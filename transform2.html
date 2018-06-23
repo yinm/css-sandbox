@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    #sample01 .btn01 {
+    .btn {
       background-color: #000066;
       border: 1px solid #999;
       border-radius: 2px;
@@ -20,36 +20,36 @@
       margin-bottom: 30px;
     }
 
-    #sample01 .btn01:hover {
+    .btn:hover {
       background: #ff5151;
     }
 
-    #sample01 .btn02 {
-      background-color: #000066;
-      border: 1px solid #999;
-      border-radius: 2px;
-      color: #fff;
-      display: block;
-      font-size: 14px;
-      padding: 14px;
-      text-align: center;
-      width: 160px;
-      cursor: pointer;
-      transition: 1s ease-in-out;
+    .ease {
+      transition: 3s ease;
     }
 
-    #sample01 .btn02:hover {
-      background: #ff5151;
+    .linear {
+      transition: 3s linear;
+    }
+
+    .ease-in {
+      transition: 3s ease-in;
+    }
+
+    .ease-out {
+      transition: 3s ease-out;
+    }
+
+    .ease-in-out {
+      transition: 3s ease-in-out;
     }
   </style>
 </head>
 <body>
-<div id="sample01">
-  <p>サンプル1</p>
-  <p class="btn01">カーソルをここに</p>
-
-  <p>sample2</p>
-  <p class="btn02">here</p>
-</div>
+<p class="btn ease">ease</p>
+<p class="btn linear">linear</p>
+<p class="btn ease-in">ease-in</p>
+<p class="btn ease-out">ease-out</p>
+<p class="btn ease-in-out">ease-in-out</p>
 </body>
 </html>
