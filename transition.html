@@ -1,0 +1,80 @@
+<!-- https://blog.maromaro.co.jp/archives/4352 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .btn {
+      background-color: #000066;
+      border: 1px solid #999;
+      border-radius: 2px;
+      color: #fff;
+      display: block;
+      font-size: 14px;
+      padding: 14px;
+      text-align: center;
+      width: 160px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .font-size {
+      transition: 0.5s ease-in-out;
+    }
+
+    .font-size:hover {
+      font-size: 20px;
+    }
+
+    .font-color {
+      transition: 0.5s ease-in-out;
+    }
+
+    .font-color:hover {
+      color: #ff5151;
+    }
+
+    .width {
+      transition: 0.5s ease-in-out;
+    }
+
+    .width:hover {
+      width: 240px;
+    }
+
+    .box {
+      position: relative;
+      height: 100px;
+    }
+
+    .left {
+      transition: 0.5s ease-in-out;
+      position: absolute;
+      left: 0;
+    }
+
+    .left:hover {
+      left: 100px;
+    }
+
+    .border-radius {
+      transition: 0.5s ease-in-out;
+    }
+
+    .border-radius:hover {
+      border-radius: 80px;
+    }
+  </style>
+</head>
+<body>
+<p class="btn font-size">font-size</p>
+<p class="btn font-color">font-color</p>
+<p class="btn width">width</p>
+<div class="box">
+  <p class="btn left">left</p>
+</div>
+<p class="btn border-radius">border-radius</p>
+</body>
+</html>
