@@ -22,7 +22,7 @@
     }
 
     .btn01:hover {
-      transform: rotateX(360deg);
+      transform: skewX(45deg);
     }
 
     .btn02 {
@@ -41,7 +41,7 @@
     }
 
     .btn02:hover {
-      transform: rotateY(360deg);
+      transform: skewY(45deg);
     }
 
     .btn03 {
@@ -60,26 +60,7 @@
     }
 
     .btn03:hover {
-      transform: rotate(360deg);
-    }
-
-    .btn04 {
-      background-color: #000066;
-      border: 1px solid #999;
-      border-radius: 2px;
-      color: #fff;
-      display: block;
-      font-size: 14px;
-      padding: 14px;
-      text-align: center;
-      width: 160px;
-      cursor: pointer;
-      margin-bottom: 30px;
-      transition: 0.6s ease-in-out;
-    }
-
-    .btn04:hover {
-      transform: rotate(-360deg);
+      transform: skew(45deg, 45deg);
     }
   </style>
 </head>
@@ -87,6 +68,5 @@
 <p class="btn01">X</p>
 <p class="btn02">Y</p>
 <p class="btn03">X and Y</p>
-<p class="btn04">reverse</p>
 </body>
 </html>
