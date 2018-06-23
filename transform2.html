@@ -22,7 +22,7 @@
     }
 
     .btn01:hover {
-      transform: translateX(50px);
+      transform: scaleX(1.5);
     }
 
     .btn02 {
@@ -38,19 +38,35 @@
       cursor: pointer;
       margin-bottom: 30px;
       transition: 0.6s ease-in-out;
-      position: relative;
-      top: 0;
-      left: 0;
     }
 
     .btn02:hover {
-      left: 50px;
-      top: 0;
+      transform: scaleY(1.5);
+    }
+
+    .btn03 {
+      background-color: #000066;
+      border: 1px solid #999;
+      border-radius: 2px;
+      color: #fff;
+      display: block;
+      font-size: 14px;
+      padding: 14px;
+      text-align: center;
+      width: 160px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      transition: 0.6s ease-in-out;
+    }
+
+    .btn03:hover {
+      transform: scale(1.5, 1.5);
     }
   </style>
 </head>
 <body>
-<p class="btn01">translate</p>
-<p class="btn02">position</p>
+<p class="btn01">X</p>
+<p class="btn02">Y</p>
+<p class="btn03">X and Y</p>
 </body>
 </html>
