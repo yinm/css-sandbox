@@ -6,15 +6,19 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .example ~ p {
-      color: orange;
+    .example li {
+      border-top: 1px solid black;
+    }
+    .example li:first-child {
+      border-top: none;
     }
   </style>
 </head>
 <body>
-<p>しない</p>
-<p class="example">しない</p>
-<p>する</p>
-<p>する</p>
+<ul class="example">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ul>
 </body>
 </html>
