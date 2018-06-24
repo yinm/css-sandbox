@@ -1,0 +1,78 @@
+<!-- http://ja.learnlayout.com/position.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      margin-bottom: 100px;
+      width: 300px;
+      height: 150px;
+      border: 2px solid #ddd;
+    }
+
+    .static {
+      position: static;
+    }
+
+    .relative1 {
+      position: relative;
+    }
+    .relative2 {
+      position: relative;
+      top: -20px;
+      left: 20px;
+      background-color: #ff0;
+      width: 500px;
+    }
+
+    .fixed {
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      background-color: #0ff;
+    }
+
+    .relative {
+      position: relative;
+      width: 600px;
+      height: 400px;
+    }
+    .absolute {
+      position: absolute;
+      top: 120px;
+      right: 0;
+      width: 300px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+<div class="static">
+  staticはデフォルト値
+</div>
+
+<div class="relative1">
+  プロパティを設定しなければ、staticと同じ
+
+  <div class="relative2">
+    プロパティありのrelative
+  </div>
+</div>
+
+<div class="fixed">
+  fixedは固定する
+</div>
+
+<div class="relative">
+  れらてぃぶ
+  <div class="absolute">
+    あぶそりゅーと
+  </div>
+</div>
+</body>
+</html>
