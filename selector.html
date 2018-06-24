@@ -6,16 +6,18 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .example * {
+    .example > p {
       color: orange;
     }
   </style>
 </head>
 <body>
-<p>こっちは適用されない</p>
 <div class="example">
-  <h2>適用</h2>
   <p>適用</p>
+  <p>適用</p>
+  <div>
+    <p>しない</p>
+  </div>
 </div>
 </body>
 </html>
