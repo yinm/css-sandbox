@@ -1,0 +1,49 @@
+<!-- ref: https://saruwakakun.com/html-css/basic/z-index -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #example {
+      position: relative;
+    }
+
+    .one,
+    .two,
+    .three {
+      position: absolute;
+    }
+
+    .one {
+      left: 0;
+      top: 0;
+      background-color: #f00;
+      width: 100px;
+      height: 100px;
+    }
+    .two {
+      left: 20px;
+      top: 20px;
+      background-color: #0f0;
+      width: 100px;
+      height: 100px;
+    }
+    .three {
+      left: 40px;
+      top: 40px;
+      background-color: #00f;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+<div id="example">
+  <p class="one">first</p>
+  <p class="two">second</p>
+  <p class="three">third</p>
+</div>
+</body>
+</html>
