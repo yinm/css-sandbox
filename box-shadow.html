@@ -9,15 +9,23 @@
     body {
       margin: 20px;
     }
-    .example {
-      width: 100px;
-      height: 100px;
-      background-color: skyblue;
-      box-shadow: 3px 3px 6px -2px #555, 3px 3px 8px rgba(255, 255, 255, 0.8) inset;
+  </style>
+  <style>
+    .sample {
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fff;
+      text-decoration: none;
+      background: skyblue;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition: .3s;
+    }
+    .sample:hover {
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
-<div class="example"></div>
+<a class="sample" href="#">BUTTON</a>
 </body>
 </html>
