@@ -6,37 +6,33 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .parent {
-      padding: 20px;
-      width: 500px;
-      height: 200px;
-      background: #ddd;
+    #example {
       position: relative;
-    }
-    p {
-      margin-top: 0;
-      margin-bottom: 0;
-      height: 30px;
+      display: inline-block;
+      padding: 0;
     }
 
-    .static {
-      background: orange;
-      width: 30%;
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #333;
     }
 
-    .absolute {
-      background: #4293f5;
-      width: 30%;
+    #example span {
       position: absolute;
-      top: 0;
-      left: 0;
+      bottom: 0;
+      right: 0;
+      color: #fff;
+      background: #74c1f8;
+      padding: 0 2px;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-<div class="parent">
-  <p class="static">要素1</p>
-  <p class="absolute">absolute</p>
+<div id="example">
+  <div class="box"></div>
+  <span>名前</span>
 </div>
 </body>
 </html>
