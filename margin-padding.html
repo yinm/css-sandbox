@@ -6,24 +6,22 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .middle {
-      background: orange;
-      padding: 10px;
-      margin: 10px;
-    }
-
-    .above {
-      background: skyblue;
-    }
-
-    .under {
+    .parent {
       background: silver;
+      width: 200px;
+    }
+
+    .parent p {
+      width: 60%;
+      margin: 0 20%;
+      padding: 0;
+      background: orange;
     }
   </style>
 </head>
 <body>
-<p class="above">前の要素</p>
-<p class="middle">要素</p>
-<p class="under">後の要素</p>
+<div class="parent">
+  <p>これは例文です</p>
+</div>
 </body>
 </html>
