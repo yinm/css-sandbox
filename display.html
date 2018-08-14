@@ -6,17 +6,32 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .example {
+    #nav ul {
+      list-style-type: none;
       text-align: center;
     }
-    span {
+
+    #nav ul li {
+      display: inline-block;
+      width: 80px;
+      height: 40px;
+      padding: 10px 0;
+      margin: 10px 0;
+      line-height: 40px;
+      vertical-align: middle;
       background: skyblue;
+      font-weight: bold;
+      color: #fff;
     }
   </style>
 </head>
 <body>
-<div class="example">
-  <span>inline</span>
+<div id="nav">
+  <ul>
+    <li>HOME</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
 </div>
 </body>
 </html>
