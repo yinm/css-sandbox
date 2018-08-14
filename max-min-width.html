@@ -1,0 +1,46 @@
+<!-- ref: https://saruwakakun.com/html-css/basic/max-min-width -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    p {
+      margin: 0;
+    }
+
+    .test1 {
+      width: 200px;
+      background: skyblue;
+    }
+    .test2 {
+      width: 100px;
+      background: skyblue;
+    }
+
+    .nomin {
+      background: gray;
+      width: 50%;
+    }
+    .min {
+      background: orange;
+      width: 50%;
+      min-width: 100px;
+    }
+  </style>
+</head>
+<body>
+<p>親要素が大きめの場合</p>
+<div class="test1">
+  <p class="nomin">最小幅なし</p>
+  <p class="min">最小幅100px</p>
+</div>
+
+<p>親要素が小さめの場合</p>
+<div class="test2">
+  <p class="nomin">最小幅なし</p>
+  <p class="min">最小幅100px</p>
+</div>
+</body>
+</html>
