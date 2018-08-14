@@ -6,16 +6,31 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    #test {
+    #test1 {
+      background: gray;
+    }
+
+    #test2 {
+      background: gray;
+      height: 100px;
+    }
+
+    #test1 > p,
+    #test2 > p {
+      height: 50%;
       background: orange;
-      height: 50px;
     }
   </style>
 </head>
 <body>
-<div id="test">
-  <p>子要素です。</p>
-  <p><img src="https://saruwakakun.com/wp-content/uploads/2016/11/IMG_9164.jpeg" alt="さるわかくんの顔" /></p>
+<p>親のheightが未指定</p>
+<div id="test1">
+  <p>要素</p>
+</div>
+
+<p>親のheightが指定</p>
+<div id="test2">
+  <p>要素</p>
 </div>
 </body>
 </html>
