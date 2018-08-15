@@ -11,17 +11,22 @@
       background: orange;
       height: 200px;
     }
-    .parent::before {
+    .parent p {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      content: 'BOX';
-      background: yellow;
+      left: 50%;
+      -ms-transform: translate(-50%,-50%);
+      -webkit-transform : translate(-50%,-50%);
+      transform : translate(-50%,-50%);
+      width: 100px;
+      text-align: center;
+      background: #fff;
     }
   </style>
 </head>
 <body>
 <div class="parent">
+  <p>BOX</p>
 </div>
 </body>
 </html>
