@@ -11,16 +11,17 @@
       background: orange;
       height: 200px;
     }
-    .parent p {
+    .parent::before {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      content: 'BOX';
+      background: yellow;
     }
   </style>
 </head>
 <body>
 <div class="parent">
-  <p>これは例文です。<br>これは2行目です。</p>
 </div>
 </body>
 </html>
