@@ -6,19 +6,24 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .example {
-      text-align: center;
+    h1 {
+      position: relative;
+      padding: 1em;
+      background: silver;
     }
-
-    .example::before {
-      content: 'TITLE HERE';
-      color: gray;
-      font-size: 2em;
-      display: block;
+    h1::after {
+      position: absolute;
+      content: 'ラベル';
+      top: 0;
+      left: 0;
+      color: #fff;
+      padding: 0.2em;
+      background: #f89174;
+      font-size: 0.5em;
     }
   </style>
 </head>
 <body>
-<h1 class="example">ここにタイトルを書きます</h1>
+<h1>こんにちは</h1>
 </body>
 </html>
