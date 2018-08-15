@@ -7,15 +7,32 @@
   <title>Title</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <style>
+    blockquote {
+      position: relative;
+      background: #efefef;
+      padding: 20px 10px 15px;
+    }
+    blockquote::before {
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      content: "\f10e";
+      top: 10px;
+      left: 10px;
+      color: silver;
+      font-size: 1.5em;
+    }
     h3::before {
       font-family: "Font Awesome 5 Free";
-      content: "\f00c";
+      content: "\f10e";
       padding-right: 5px;
       color: #f89174;
     }
   </style>
 </head>
 <body>
-<h3>見出しにアイコンを使おう</h3>
+<blockquote>
+  <p>これは引用の文章です。</p>
+  <h3>aaaaaa</h3>
+</blockquote>
 </body>
 </html>
