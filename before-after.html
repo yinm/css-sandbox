@@ -5,27 +5,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <style>
-    .flow {
-      text-align: center;
-      list-style-type: none;
+    .example {
+      position: relative;
+      background: #efefef;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
     }
-    .flow li:not(:last-child)::after {
-      font-family: "Font Awesome 5 Free";
-      content: "\f0a7";
-      display: block;
-      font-size: 2em;
-      color: skyblue;
-      padding: 0.3em;
+
+    .example::before {
+      position: absolute;
+      content: '';
+      border-top: 20px solid #efefef;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   </style>
 </head>
 <body>
-<ul class="flow">
-  <li>first</li>
-  <li>Second</li>
-  <li>Third</li>
-</ul>
+<p class="example">コメントを入れます</p>
 </body>
 </html>
