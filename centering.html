@@ -6,17 +6,19 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .example {
-      vertical-align: middle;
-      height: 100px;
-      line-height: 100px;
+    .parent {
+      height: 150px;
       background: orange;
+    }
+    .parent p {
+      line-height: 150px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-<p class="example">
-  これは例文です。
-</p>
+<div class="parent">
+  <p>これは例文です</p>
+</div>
 </body>
 </html>
