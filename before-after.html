@@ -6,17 +6,19 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-    .example::before {
-      content: '『';
-      color: skyblue;
+    .example {
+      text-align: center;
     }
-    .example::after {
-      content: '』';
-      color: skyblue;
+
+    .example::before {
+      content: 'TITLE HERE';
+      color: gray;
+      font-size: 2em;
+      display: block;
     }
   </style>
 </head>
 <body>
-<p class="example">これは例文です。</p>
+<h1 class="example">ここにタイトルを書きます</h1>
 </body>
 </html>
