@@ -7,30 +7,18 @@
   <title>Title</title>
   <style>
     .circle {
-      position: relative;
       display: inline-block;
       width: 80px;
       height: 80px;
-      border-radius: 50%;
-      background: skyblue;
-    }
-
-    .circle span {
-      position: absolute;
-      display: inline-block;
-      left: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      width: 80px;
       text-align: center;
+      line-height: 80px;
+      vertical-align: middle;
+      border-radius: 50%;
+      border: 3px solid skyblue;
     }
   </style>
 </head>
 <body>
-<a class="circle" href="#">
-  <span>1<br/>sample</span>
-</a>
+<a class="circle" href="#">1</a>
 </body>
 </html>
