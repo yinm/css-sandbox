@@ -36,6 +36,19 @@
     .comment-button:not(:last-child) {
       margin-right: 0.5rem;
     }
+
+    .comment-annotation {
+      display: flex;
+    }
+
+    .comment-annotation__right {
+      margin-right: auto;
+    }
+
+    .comment-time {
+      color: #bbb;
+      font-size: smaller;
+    }
   </style>
 </head>
 <body>
@@ -46,9 +59,12 @@
   <div class="comment-right">
     <a href="" class="comment-name"><strong>mitsuruog</strong></a>
     <p class="comment-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-    <div class="comment-buttons">
-      <a class="comment-button"><i class="fa fa-pencil"></i>編集</a>
-      <a class="comment-button"><i class="fa fa-trash"></i>削除</a>
+    <div class="comment-annotation">
+      <time class="comment-annotation__right comment-time">2018/03/29 10:00</time>
+      <div class="comment-buttons">
+        <a class="comment-button"><i class="fa fa-pencil"></i>編集</a>
+        <a class="comment-button"><i class="fa fa-trash"></i>削除</a>
+      </div>
     </div>
   </div>
 </div>
