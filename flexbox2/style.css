@@ -1,11 +1,17 @@
 header {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 ul {
   display: flex;
   align-items: center;
+}
+
+ul li {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 main {
