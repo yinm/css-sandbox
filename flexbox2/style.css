@@ -22,4 +22,17 @@ main {
 main div.animal {
   width: calc(33.3% - 10px);
   margin: 5px;
+  box-shadow: 0 0 3px #aaa;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main div.animal {
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
 }
