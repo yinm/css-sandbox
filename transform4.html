@@ -6,19 +6,27 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-  .translate {
+  .view {
+    transform-style: preserve-3d;
+    perspective: 500px;
+  }
+  .translateZ {
     width: 80px;
     height: 80px;
-    background: red;
+    margin: 0 auto;
     transition-duration: 1s;
+    background: red;
+    transform: rotateX(40deg);
   }
 
-  .translate:hover {
-    transform: translateY(50px);
+  .translateZ:hover {
+    transform: translateZ(100px) rotateX(40deg);
   }
   </style>
 </head>
 <body>
-<div class="translate">translate</div>
+<div class="view">
+  <div class="translateZ">translateZ</div>
+</div>
 </body>
 </html>
