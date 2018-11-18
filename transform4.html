@@ -6,56 +6,22 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-  .view {
-    padding: 30px 30px 100px 60px;
-  }
-
-  li {
-    list-style-type: none;
-    float: left;
+  .skew {
     width: 100px;
     height: 100px;
-    background: rgba(52, 73, 96, 0.8);
-    margin-right: 70px;
-    word-break: break-all;
-    position: relative;
-    transform-style: preserve-3d;
-    perspective: 500px;
-  }
-
-  .scaleZ,
-  .scaleXYZ {
-    width: 100px;
-    height: 100px;
+    margin: 30px auto 0 auto;
     text-align: center;
     color: #fff;
-    font-size: 12px;
-    background: rgba(18, 132, 129, 0.8);
+    transition-duration: 1s;
+    background: red;
   }
 
-  .scaleZ {
-    transform: rotateY(40deg);
-  }
-
-  .scaleXYZ {
-    transform: rotateY(40deg);
-  }
-
-  .view:hover .scaleZ {
-    transform: scaleZ(5) rotateY(40deg);
-  }
-
-  .view:hover .scaleXYZ {
-    transform: scaleX(1.5) scaleY(1.5) scaleZ(1.5) rotateY(40deg);
+  .skew:hover {
+    transform: skew(20deg, 20deg);
   }
   </style>
 </head>
 <body>
-<div class="view">
-  <ul>
-    <li><div class="scaleZ">scaleZ</div></li>
-    <li><div class="scaleXYZ">scaleXYZ</div></li>
-  </ul>
-</div>
+<div class="skew">skew</div>
 </body>
 </html>
