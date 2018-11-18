@@ -6,58 +6,20 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style>
-  .ease,
-  .linear,
-  .ease-in,
-  .ease-out,
-  .ease-in-out {
-    width: 100px;
-    background-color: aqua;
-    transition-duration: 2s;
+  p {
+    width: 50px;
+    background-color: red;
+    transition-duration: 3s;
+    transition-delay: 2s;
   }
 
-  .all:hover .ease,
-  .all:hover .linear,
-  .all:hover .ease-in,
-  .all:hover .ease-out,
-  .all:hover .ease-in-out {
-    width: 500px;
-    background-color: green;
-  }
-
-  .ease {
-    transition-timing-function: ease;
-  }
-
-  .linear {
-    transition-timing-function: linear;
-  }
-
-  .ease-in {
-    transition-timing-function: ease-in;
-  }
-
-  .ease-out {
-    transition-timing-function: ease-out;
-  }
-
-  .ease-in-out {
-    transition-timing-function: ease-in-out;
+  p:hover {
+    width: 300px;
+    background-color: blue;
   }
   </style>
 </head>
 <body>
-<div class="all">
-  <h3>ease: 開始時と終了時は緩やかに変化</h3>
-  <p class="ease">ease</p>
-  <h3>linear: 開始から終了まで一定に変化</h3>
-  <p class="linear">linear</p>
-  <h3>ease-in: 開始時は緩やかに変化、終了に近づくと早く変化</h3>
-  <p class="ease-in">ease-in</p>
-  <h3>ease-out: 開始時は早く変化、終了時は緩やかに変化</h3>
-  <p class="ease-out">ease-out</p>
-  <h3>ease-in-out: 開始時と終了時はかなり緩やかに変化</h3>
-  <p class="ease-in-out">ease-in-out</p>
-</div>
+<p>test</p>
 </body>
 </html>
