@@ -9,46 +9,22 @@
   .animation {
     width: 100px;
     height: 100px;
-    background-color: #008cd4;
-    color: #fff;
-    line-height: 100px;
-    animation-name: anime-yinm;
-    animation-duration: 3s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
+    background: #00bcd4;
+    animation-name: animation-yinm;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
     animation-direction: normal;
   }
-  @keyframes anime-yinm {
+
+  @keyframes animation-yinm {
     0% { width: 100px; }
     100% { width: 100%; }
-  }
-
-  .ease {
-    animation-timing-function: ease;
-  }
-
-  .linear {
-    animation-timing-function: linear;
-  }
-
-  .ease-in {
-    animation-timing-function: ease-in;
-  }
-
-  .ease-out {
-    animation-timing-function: ease-out;
-  }
-
-  .ease-in-out {
-    animation-timing-function: ease-in-out;
   }
   </style>
 </head>
 <body>
-<div class="animation ease">ease</div>
-<div class="animation linear">linear</div>
-<div class="animation ease-in">ease-in</div>
-<div class="animation ease-out">ease-out</div>
-<div class="animation ease-in-out">ease-in-out</div>
+<div class="animation"></div>
 </body>
 </html>
