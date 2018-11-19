@@ -9,22 +9,46 @@
   .animation {
     width: 100px;
     height: 100px;
-    background: #008cd4;
-    animation-name: animation-haniwaman;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    background-color: #008cd4;
+    color: #fff;
+    line-height: 100px;
+    animation-name: anime-yinm;
+    animation-duration: 3s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: normal;
   }
-
-  @keyframes animation-haniwaman {
+  @keyframes anime-yinm {
     0% { width: 100px; }
     100% { width: 100%; }
+  }
+
+  .ease {
+    animation-timing-function: ease;
+  }
+
+  .linear {
+    animation-timing-function: linear;
+  }
+
+  .ease-in {
+    animation-timing-function: ease-in;
+  }
+
+  .ease-out {
+    animation-timing-function: ease-out;
+  }
+
+  .ease-in-out {
+    animation-timing-function: ease-in-out;
   }
   </style>
 </head>
 <body>
-<div class="animation"></div>
+<div class="animation ease">ease</div>
+<div class="animation linear">linear</div>
+<div class="animation ease-in">ease-in</div>
+<div class="animation ease-out">ease-out</div>
+<div class="animation ease-in-out">ease-in-out</div>
 </body>
 </html>
