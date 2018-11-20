@@ -14,9 +14,13 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-delay: 0s;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-direction: normal;
-    animation-fill-mode: backwards;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  .animation:hover {
+    animation-play-state: paused;
   }
 
   @keyframes animation-yinm {
